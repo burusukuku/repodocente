@@ -1,0 +1,48 @@
+site_name: Repodocente
+site_description: Portal de apuntes interactivos de Ciclos Formativos de Grado Superior (DAM, DAW, ASIR)
+site_url: https://repodocente.es
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - content.code.copy
+    - content.tabs.link
+    - toc.integrate
+    - search.highlight
+    - search.share
+markdown_extensions:
+  - admonition
+  - pymdownx.details         # <details> y desplegables
+  - pymdownx.tabbed          # pestañas de contenido/código
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - attr_list
+  - def_list
+plugins:
+  - search
+  - mkdocs-jupyter           # opcional: abrir .ipynb
+extra_javascript:
+  - https://unpkg.com/thebe@latest/lib/index.js
+  - https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js
+extra:
+  thebe:
+    repository_url: ""       # Pyodide en el navegador
+    kernel_name: python
+nav:
+  - Inicio: index.md
+  - 1º ASIR:
+      - GBBDD: asir/1/gbbdd/index.md
+  - 2º ASIR:
+      - SRI: asir/2/sri/index.md
+  - 1º DAM:
+      - BBDD: dam/1/bbdd/index.md
+  - 2º DAM:
+      - ACCDAT: dam/2/accdat/index.md
+      - SGE: dam/2/sge/index.md
+      - Proyecto: dam/2/proyecto/index.md
+  - 2º DAW:
+      - DWEC: daw/2/dwec/index.md
+      - DIW: daw/2/diw/index.md
