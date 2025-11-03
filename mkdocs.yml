@@ -29,7 +29,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js
 extra:
   thebe:
-    repository_url: ""       # Pyodide en el navegador
+    repository_url: ""
     kernel_name: python
 nav:
   - Inicio: index.md
